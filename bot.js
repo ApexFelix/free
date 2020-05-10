@@ -13,11 +13,11 @@ response.sendStatus(200)
 })
 app.listen(process.env.PORT)
 setInterval(() => {
-  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`)
 }, 280000)
 const Log = message => {
-  console.log(`[ »» ] ${message}`)
-};
+console.log(`[ »» ] ${message}`)
+}
 
 client.commands = new Discord.Collection()
 client.aliases = new Discord.Collection()
@@ -97,5 +97,4 @@ client.elevation = message => {
   if (message.author.id === ayarlar.sahip) permlvl = 4;
   return permlvl;
 };
-
 client.login(ayarlar.token)
