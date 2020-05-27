@@ -1,5 +1,5 @@
-const Discord = require("discord.js")
-const ayarlar = require("../ayarlar.json")
+const Discord = require('discord.js')
+const ayarlar = require('../ayarlar.json')
 
 exports.run = async (client,message) => {
 message.channel.send(client.ping)
@@ -8,12 +8,12 @@ message.channel.send(client.ping)
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["Ping"],
+  aliases: ['Ping'],
   permLevel: 0
 }
 
 exports.help = {
-  name: "Ping",
-  description: "Ping'i Atar",
-  usage: "ping"
+  name: 'Ping',
+  description: 'Ping Atar',
+  usage: 'ping'
 }
